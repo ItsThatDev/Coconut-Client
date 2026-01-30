@@ -1,6 +1,6 @@
-package me.alpha432.oyvey.event.impl;
+package me.itsthatdev.coconut.event.impl;
 
-import me.alpha432.oyvey.event.Event;
+import me.itsthatdev.coconut.event.Event;
 import net.minecraft.world.entity.LivingEntity;
 
 public class DeathEvent extends Event {
