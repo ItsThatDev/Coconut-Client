@@ -1,8 +1,8 @@
-package me.alpha432.oyvey.event.impl;
+package me.itsthatdev.oyvey.event.impl;
 
-import me.alpha432.oyvey.event.Event;
-import me.alpha432.oyvey.features.Feature;
-import me.alpha432.oyvey.features.settings.Setting;
+import me.itsthatdev.oyvey.event.Event;
+import me.itsthatdev.oyvey.features.Feature;
+import me.itsthatdev.oyvey.features.settings.Setting;
 
 public class ClientEvent extends Event {
     private Feature feature;
