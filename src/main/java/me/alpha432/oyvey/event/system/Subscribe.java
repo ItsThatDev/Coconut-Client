@@ -1,4 +1,4 @@
-package me.alpha432.oyvey.event.system;
+package me.itsthatdev.coconut.event.system;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
