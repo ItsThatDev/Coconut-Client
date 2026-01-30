@@ -1,8 +1,8 @@
-package me.alpha432.oyvey.features;
+package me.itsthatdev.coconut.features;
 
-import me.alpha432.oyvey.features.settings.Setting;
-import me.alpha432.oyvey.features.settings.SettingFactory;
-import me.alpha432.oyvey.util.traits.Util;
+import me.itsthatdev.coconut.features.settings.Setting;
+import me.itsthatdev.coconut.features.settings.SettingFactory;
+import me.itsthatdev.coconut.util.traits.Util;
 
 import java.util.ArrayList;
 import java.util.List;
