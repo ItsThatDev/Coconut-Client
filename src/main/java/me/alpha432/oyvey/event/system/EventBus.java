@@ -1,6 +1,6 @@
-package me.alpha432.oyvey.event.system;
+package me.itsthatdev.coconut.event.system;
 
-import me.alpha432.oyvey.event.Event;
+import me.itsthatdev.coconut.event.Event;
 
 import java.lang.reflect.Method;
 import java.util.List;
