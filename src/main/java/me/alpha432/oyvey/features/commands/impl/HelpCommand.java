@@ -1,7 +1,7 @@
-package me.alpha432.oyvey.features.commands.impl;
+package me.itsthatdev.coconut.features.commands.impl;
 
-import me.alpha432.oyvey.OyVey;
-import me.alpha432.oyvey.features.commands.Command;
+import me.itsthatdev.coconut.Coconut;
+import me.itsthatdev.coconut.features.commands.Command;
 import net.minecraft.ChatFormatting;
 
 public class HelpCommand
@@ -13,9 +13,9 @@ public class HelpCommand
     @Override
     public void execute(String[] commands) {
         HelpCommand.sendMessage("Commands: ");
-        for (Command command : OyVey.commandManager.getCommands()) {
+        for (Command command : coconut.commandManager.getCommands()) {
             StringBuilder builder = new StringBuilder(ChatFormatting.GRAY.toString());
-            builder.append(OyVey.commandManager.getPrefix());
+            builder.append(coconut.commandManager.getPrefix());
             builder.append(command.getName());
             builder.append(" ");
             for (String cmd : command.getCommands()) {
