@@ -1,6 +1,6 @@
-package me.alpha432.oyvey.features.gui.items;
+package me.itsthatdev.coconut.features.gui.items;
 
-import me.alpha432.oyvey.features.Feature;
+import me.itsthatdev.coconut.features.Feature;
 import net.minecraft.client.gui.GuiGraphics;
 
 import java.awt.*;
