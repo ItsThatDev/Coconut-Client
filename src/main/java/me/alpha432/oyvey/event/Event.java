@@ -1,4 +1,4 @@
-package me.alpha432.oyvey.event;
+package me.itsthatdev.coconut.event;
 
 public class Event {
     private boolean cancelled;
