@@ -1,20 +1,20 @@
-package me.alpha432.oyvey;
+package me.itsthatdev.coconut;
 
-import me.alpha432.oyvey.features.gui.HudEditorScreen;
-import me.alpha432.oyvey.manager.*;
-import me.alpha432.oyvey.util.TextUtil;
+import me.itsthatdev.coconut.features.gui.HudEditorScreen;
+import me.itsthatdev.coconut.manager.*;
+import me.itsthatdev.coconut.util.TextUtil;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.SharedConstants;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public class OyVey implements ModInitializer, ClientModInitializer {
-    public static final String NAME = "OyVey";
+public class coconut implements ModInitializer, ClientModInitializer {
+    public static final String NAME = "Coconut";
     public static final String VERSION = SharedConstants.getCurrentVersion().name();
     public static float TIMER = 1f;
 
-    public static final Logger LOGGER = LogManager.getLogger("OyVey");
+    public static final Logger LOGGER = LogManager.getLogger("Coconut");
     public static ServerManager serverManager;
     public static ColorManager colorManager;
     public static RotationManager rotationManager;
