@@ -1,10 +1,10 @@
-package me.alpha432.oyvey.features.gui;
+package me.itsthatdev.coconut.features.gui;
 
-import me.alpha432.oyvey.OyVey;
-import me.alpha432.oyvey.features.Feature;
-import me.alpha432.oyvey.features.gui.items.buttons.ModuleButton;
-import me.alpha432.oyvey.features.modules.Module;
-import me.alpha432.oyvey.features.modules.client.HudModule;
+import me.itsthatdev.coconut.Coconut;
+import me.itsthatdev.coconut.features.Feature;
+import me.itsthatdev.coconut.features.gui.items.buttons.ModuleButton;
+import me.itsthatdev.coconut.features.modules.Module;
+import me.itsthatdev.coconut.features.modules.client.HudModule;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.input.CharacterEvent;
@@ -21,13 +21,13 @@ public class HudEditorScreen extends Screen {
     public boolean anyHover;
 
     public HudEditorScreen() {
-        super(Component.literal("oyvey-hudeditor"));
+        super(Component.literal("coconut-hudeditor"));
         load();
     }
 
     private void load() {
         Widget hud = new Widget("Hud", 50, 50, true);
-        OyVey.moduleManager.stream()
+        coconut.moduleManager.stream()
                 .filter(m -> m.getCategory() == Module.Category.HUD && !m.hidden)
                 .map(ModuleButton::new)
                 .forEach(hud::addButton);
