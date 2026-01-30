@@ -1,7 +1,7 @@
-package me.alpha432.oyvey.features.commands.impl;
+package me.itsthatdev.coconut.features.commands.impl;
 
-import me.alpha432.oyvey.OyVey;
-import me.alpha432.oyvey.features.commands.Command;
+import me.itsthatdev.coconut.Coconut;
+import me.itsthatdev.coconut.features.commands.Command;
 
 public class FriendCommand
         extends Command {
@@ -12,11 +12,11 @@ public class FriendCommand
     @Override
     public void execute(String[] commands) {
         if (commands.length == 1) {
-            if (OyVey.friendManager.getFriends().isEmpty()) {
+            if (coconut.friendManager.getFriends().isEmpty()) {
                 FriendCommand.sendMessage("Friend list empty D:.");
             } else {
                 StringBuilder f = new StringBuilder("Friends: ");
-                for (String friend : OyVey.friendManager.getFriends()) {
+                for (String friend : coconut.friendManager.getFriends()) {
                     try {
                         f.append(friend).append(", ");
                     } catch (Exception exception) {
@@ -28,22 +28,22 @@ public class FriendCommand
         }
         if (commands.length == 2) {
             if (commands[0].equals("reset")) {
-                OyVey.friendManager.getFriends().clear();
+                coconut.friendManager.getFriends().clear();
                 FriendCommand.sendMessage("Friends got reset.");
                 return;
             }
-            FriendCommand.sendMessage(commands[0] + (OyVey.friendManager.isFriend(commands[0]) ? " is friended." : " isn't friended."));
+            FriendCommand.sendMessage(commands[0] + (coconut.friendManager.isFriend(commands[0]) ? " is friended." : " isn't friended."));
             return;
         }
         if (commands.length >= 2) {
             switch (commands[0]) {
                 case "add" -> {
-                    OyVey.friendManager.addFriend(commands[1]);
+                    coconut.friendManager.addFriend(commands[1]);
                     FriendCommand.sendMessage("{aqua} %s has been friended", commands[1]);
                     return;
                 }
                 case "del", "remove" -> {
-                    OyVey.friendManager.removeFriend(commands[1]);
+                    coconut.friendManager.removeFriend(commands[1]);
                     FriendCommand.sendMessage("{red} %s has been unfriended", commands[1]);
                     return;
                 }
