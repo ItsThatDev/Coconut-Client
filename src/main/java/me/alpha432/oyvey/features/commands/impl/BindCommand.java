@@ -1,12 +1,12 @@
-package me.alpha432.oyvey.features.commands.impl;
+package me.itsthatdev.coconut.features.commands.impl;
 
-import me.alpha432.oyvey.OyVey;
-import me.alpha432.oyvey.event.impl.KeyInputEvent;
-import me.alpha432.oyvey.event.system.Subscribe;
-import me.alpha432.oyvey.features.commands.Command;
-import me.alpha432.oyvey.features.modules.Module;
-import me.alpha432.oyvey.features.settings.Bind;
-import me.alpha432.oyvey.util.KeyboardUtil;
+import me.itsthatdev.coconut.Coconut;
+import me.itsthatdev.coconut.event.impl.KeyInputEvent;
+import me.itsthatdev.coconut.event.system.Subscribe;
+import me.itsthatdev.coconut.features.commands.Command;
+import me.itsthatdev.coconut.features.modules.Module;
+import me.itsthatdev.coconut.features.settings.Bind;
+import me.itsthatdev.coconut.util.KeyboardUtil;
 import org.lwjgl.glfw.GLFW;
 
 public class BindCommand
@@ -26,7 +26,7 @@ public class BindCommand
             return;
         }
         String moduleName = commands[0];
-        Module module = OyVey.moduleManager.getModuleByName(moduleName);
+        Module module = coconut.moduleManager.getModuleByName(moduleName);
         if (module == null) {
             sendMessage("Unknown module '%s'!", moduleName);
             return;
