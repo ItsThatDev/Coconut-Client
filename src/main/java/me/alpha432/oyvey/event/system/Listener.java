@@ -1,4 +1,4 @@
-package me.alpha432.oyvey.event.system;
+package me.itsthatdev.coconut.event.system;
 
 import java.lang.invoke.*;
 import java.lang.reflect.Method;
