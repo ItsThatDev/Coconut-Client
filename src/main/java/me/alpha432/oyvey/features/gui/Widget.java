@@ -1,12 +1,12 @@
-package me.alpha432.oyvey.features.gui;
+package me.itsthatdev.coconut.features.gui;
 
-import me.alpha432.oyvey.features.Feature;
-import me.alpha432.oyvey.features.gui.items.Item;
-import me.alpha432.oyvey.features.gui.items.buttons.Button;
-import me.alpha432.oyvey.features.modules.client.ClickGui;
-import me.alpha432.oyvey.util.ColorUtil;
-import me.alpha432.oyvey.util.render.RenderUtil;
-import me.alpha432.oyvey.util.render.ScissorUtil;
+import me.itsthatdev.coconut.features.Feature;
+import me.itsthatdev.coconut.features.gui.items.Item;
+import me.itsthatdev.coconut.features.gui.items.buttons.Button;
+import me.itsthatdev.coconut.features.modules.client.ClickGui;
+import me.itsthatdev.coconut.util.ColorUtil;
+import me.itsthatdev.coconut.util.render.RenderUtil;
+import me.itsthatdev.coconut.util.render.ScissorUtil;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.resources.sounds.SimpleSoundInstance;
 import net.minecraft.sounds.SoundEvents;
@@ -55,7 +55,7 @@ public class Widget
         if (this.open) {
             RenderUtil.rect(context, this.x, (float) this.y + 12.5f, this.x + this.width, (float) (this.y + this.height) + totalItemHeight, 0x77000000);
         }
-        drawString(this.getName(), (float) this.x + 3.0f, (float) this.y - 4.0f - (float) OyVeyGui.getClickGui().getTextOffset(), -1);
+        drawString(this.getName(), (float) this.x + 3.0f, (float) this.y - 4.0f - (float) coconutGui.getClickGui().getTextOffset(), -1);
         ScissorUtil.enable(context, x, 0, x + width, mc.getWindow().getGuiScaledHeight());
 
         if (this.open) {
@@ -83,7 +83,7 @@ public class Widget
         if (mouseButton == 0 && this.isHovering(mouseX, mouseY)) {
             this.x2 = this.x - mouseX;
             this.y2 = this.y - mouseY;
-            OyVeyGui.getClickGui().getComponents().forEach(component -> {
+            coconutGui.getClickGui().getComponents().forEach(component -> {
                 if (component.drag) {
                     component.drag = false;
                 }
