@@ -1,7 +1,7 @@
-package me.alpha432.oyvey.event.impl;
+package me.itsthatdev.coconut.event.impl;
 
-import me.alpha432.oyvey.event.Event;
-import me.alpha432.oyvey.event.Stage;
+import me.itsthatdev.coconut.event.Event;
+import me.itsthatdev.coconut.event.Stage;
 
 public class UpdateWalkingPlayerEvent extends Event {
     private final Stage stage;
