@@ -1,9 +1,9 @@
-package me.alpha432.oyvey.features.commands;
+package me.itsthatdev.coconut.features.commands;
 
-import me.alpha432.oyvey.OyVey;
-import me.alpha432.oyvey.features.Feature;
-import me.alpha432.oyvey.util.TextUtil;
-import me.alpha432.oyvey.util.player.ChatUtil;
+import me.itsthatdev.coconut.Coconut;
+import me.itsthatdev.coconut.features.Feature;
+import me.itsthatdev.coconut.util.TextUtil;
+import me.itsthatdev.coconut.util.player.ChatUtil;
 
 public abstract class Command
         extends Feature {
@@ -27,7 +27,7 @@ public abstract class Command
     }
 
     public static String getCommandPrefix() {
-        return OyVey.commandManager.getPrefix();
+        return coconut.commandManager.getPrefix();
     }
 
     public abstract void execute(String[] var1);
